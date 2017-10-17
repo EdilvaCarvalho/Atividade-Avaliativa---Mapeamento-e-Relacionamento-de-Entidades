@@ -6,7 +6,7 @@
     <class>br.edu.ifpb.dac.cenario1.domain.entidades.Conta</class>
     <class>br.edu.ifpb.dac.cenario1.domain.util.ConvertLocalDate</class>
     <properties>
-      <property name="javax.persistence.jdbc.url" value="jdbc:postgresql://localhost:5432/dac-cenario1"/>
+      <property name="javax.persistence.jdbc.url" value="jdbc:postgresql://bancohost:5432/dac-cenario1"/>
       <property name="javax.persistence.jdbc.user" value="postgres"/>
       <property name="javax.persistence.jdbc.driver" value="org.postgresql.Driver"/>
       <property name="javax.persistence.jdbc.password" value="postgres"/>

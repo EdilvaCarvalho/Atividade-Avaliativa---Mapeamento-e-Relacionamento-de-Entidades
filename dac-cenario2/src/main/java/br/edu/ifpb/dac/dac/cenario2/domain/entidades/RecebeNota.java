@@ -3,8 +3,8 @@ package br.edu.ifpb.dac.dac.cenario2.domain.entidades;
 
 import java.io.Serializable;
 import java.util.Objects;
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.IdClass;
 import javax.persistence.JoinColumn;
@@ -20,11 +20,11 @@ import javax.persistence.OneToOne;
 public class RecebeNota implements Serializable{
     
     @Id
-    @ManyToOne
+    @ManyToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "cod_filme")
     private Filme filme;
     @Id
-    @OneToOne
+    @OneToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "cod_evento")
     private Evento evento;
     private float nota;

@@ -10,7 +10,7 @@
     <class>br.edu.ifpb.dac.cenario3.domain.util.ConvertLocalDate</class>
     ConvertLocalDate
     <class>br.edu.ifpb.dac.cenario3.domain.entidades.Movie</class><class>br.edu.ifpb.dac.cenario3.domain.entidades.MovieSession</class><class>br.edu.ifpb.dac.cenario3.domain.entidades.Room</class><properties>
-      <property name="javax.persistence.jdbc.url" value="jdbc:postgresql://localhost:5432/dac-cenario3"/>
+      <property name="javax.persistence.jdbc.url" value="jdbc:postgresql://bancohost:5432/dac-cenario3"/>
       <property name="javax.persistence.jdbc.user" value="postgres"/>
       <property name="javax.persistence.jdbc.driver" value="org.postgresql.Driver"/>
       <property name="javax.persistence.jdbc.password" value="postgres"/>

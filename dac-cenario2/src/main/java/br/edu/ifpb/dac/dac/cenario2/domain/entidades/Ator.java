@@ -4,6 +4,7 @@ package br.edu.ifpb.dac.dac.cenario2.domain.entidades;
 import br.edu.ifpb.dac.dac.cenario2.domain.enums.Sexo;
 import java.io.Serializable;
 import java.util.Objects;
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.EnumType;
@@ -31,7 +32,7 @@ public class Ator implements Serializable{
     private Sexo sexo;
     @Column(nullable=false, length=30)
     private String nacionalidade;
-    @OneToOne(fetch = FetchType.LAZY)
+    @OneToOne(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
     @JoinColumn(name = "cod_par_romantico")
     private Ator parRomantico;
 
